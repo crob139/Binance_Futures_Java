@@ -246,6 +246,13 @@ public interface SyncRequestClient {
      * @return Balances.
      */
     List<AccountBalance> getBalance();
+    
+    /**
+     * Get account balances V2.
+     *
+     * @return Balances V2.
+     */
+    List<AccountBalanceV2> getBalanceV2();
   
     /**
      * Get current account information.
@@ -253,6 +260,13 @@ public interface SyncRequestClient {
      * @return Current account information.
      */
     AccountInformation getAccountInformation();
+    
+    /**
+     * Get current account information V2.
+     *
+     * @return Current account information V2.
+     */
+    AccountInformationV2 getAccountInformationV2();
   
     /**
      * Change initial leverage.

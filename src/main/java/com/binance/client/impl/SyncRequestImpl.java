@@ -156,8 +156,18 @@ public class SyncRequestImpl implements SyncRequestClient {
     }
     
     @Override
+    public List<AccountBalanceV2> getBalanceV2() {
+        return RestApiInvoker.callSync(requestImpl.getBalanceV2());
+    }
+    
+    @Override
     public AccountInformation getAccountInformation() {
         return RestApiInvoker.callSync(requestImpl.getAccountInformation());
+    }
+    
+    @Override
+    public AccountInformationV2 getAccountInformationV2() {
+        return RestApiInvoker.callSync(requestImpl.getAccountInformationV2());
     }
     
     @Override
